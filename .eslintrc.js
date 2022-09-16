@@ -1,0 +1,45 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+    amd: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'next',
+  ],
+
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['react'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  rules: {
+    'react/jsx-filename-extension': 0,
+    'react/state-in-constructor': 0,
+    'no-trailing-spaces': 0,
+    'react/no-unused-state': 0,
+    // "jsx-quotes": ["error", "prefer-single"],
+    'import/no-duplicates': 0,
+    'class-methods-use-this': 0,
+    'no-useless-return': 0,
+    'spaced-comment': 0,
+    'react/forbid-prop-types': 0,
+    'react/react-in-jsx-scope': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/prop-types': 0,
+  },
+}

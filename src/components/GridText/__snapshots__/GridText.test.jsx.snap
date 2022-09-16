@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GridText /> should render 1`] = `
+.c3 {
+  color: #0A1128;
+  text-transform: uppercase;
+  font-size: 6.4rem;
+}
+
+.c8 {
+  color: #0A1128;
+  text-transform: none;
+  font-size: 3.2rem;
+}
+
+.c5 {
+  font-size: 2.4rem;
+}
+
+.c6 {
+  counter-reset: grid-counter;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 3.2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.c6 .c4 {
+  margin-bottom: 6.4rem;
+}
+
+.c7 .c2 {
+  position: relative;
+  left: 5rem;
+}
+
+.c7 .c2::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 7rem;
+  top: -3rem;
+  left: -5rem;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.c0 {
+  background: #FFFFFF;
+  color: #0A1128;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c6 {
+    grid-template-columns: 1fr;
+  }
+}
+
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="c0"
+      id=""
+    >
+      <section
+        class="c1"
+      >
+        <h2
+          class="c2 c3"
+        >
+          My grid
+        </h2>
+        <div
+          class="c4 c5"
+        >
+          Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
+        </div>
+        <div
+          class="c6"
+        >
+          <div
+            class="c7"
+          >
+            <h3
+              class="c2 c8"
+            >
+              Teste 1
+            </h3>
+            <div
+              class="c4 c5"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
+            </div>
+          </div>
+          <div
+            class="c7"
+          >
+            <h3
+              class="c2 c8"
+            >
+              Teste 2
+            </h3>
+            <div
+              class="c4 c5"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
+            </div>
+          </div>
+          <div
+            class="c7"
+          >
+            <h3
+              class="c2 c8"
+            >
+              Teste 3
+            </h3>
+            <div
+              class="c4 c5"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;
