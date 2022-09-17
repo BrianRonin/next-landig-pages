@@ -10,10 +10,11 @@ export default function Page({ data }) {
 Page.propTypes = {
   data: P.object,
 }
-
 export const getStaticProps = async (ctx) => {
   let data = null
-  console.log(ctx.params)
+  let x = { ctx: ctx }
+  x = JSON.stringify(ctx, null, 4)
+  console.log('aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii' + ctx)
   try {
     data = await loadPages(ctx.params.pagina)
   } catch {

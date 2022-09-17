@@ -27,6 +27,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang='pt-BR'>
         <Head>
+          <meta name='theme-color' content='#ffff' />
           <meta name='description' content='sei la' />
         </Head>
         <body>
