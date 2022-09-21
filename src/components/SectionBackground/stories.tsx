@@ -1,6 +1,7 @@
+import { Story } from '@storybook/react/types-6-0'
 import { Heading } from '../Heading'
 import { SectionContainer } from '../SectionContainer'
-import { SectionBackground } from './index'
+import { SectionBackground, sectionBackgroundProps } from './index'
 
 export default {
   title: 'SectionBackground',
@@ -29,7 +30,7 @@ export default {
   },
 }
 
-export const Template = (args) => {
+export const Template: Story<sectionBackgroundProps> = (args) => {
   return (
     <div>
       <SectionBackground {...args} />

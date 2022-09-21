@@ -4,16 +4,16 @@ import { Text } from '../Text'
 import { SectionBackground } from '../SectionBackground'
 import { SectionContainer } from '../SectionContainer'
 
-export type FooterProps = {
-  footerHtml: string
-  background: boolean
+export type footerProps = {
+  children: string
+  background?: boolean
 }
 
 export const Footer = ({ children, background = false }: FooterProps) => {
   return (
     <S.Main>
       <SectionContainer>
-        <Text isHtml={true}>{children}</Text>
+        <Text>{children}</Text>
       </SectionContainer>
     </S.Main>
   )

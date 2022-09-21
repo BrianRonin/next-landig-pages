@@ -1,3 +1,5 @@
+import { gridTextElement } from '.'
+
 export const MockGridText = {
   background: false,
   title: 'My grid',
@@ -20,4 +22,4 @@ export const MockGridText = {
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.',
     },
   ],
-}
+} as gridTextElement

@@ -1,4 +1,5 @@
-import { GridImage } from './index'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { GridImage, gridImageProps } from './index'
 import { MockGridImage } from './mock'
 
 export default {
@@ -11,9 +12,9 @@ export default {
       default: 'light',
     },
   },
-}
+} as Meta
 
-export const Template = (light) => {
+export const Template: Story<gridImageProps> = (light) => {
   return (
     <div>
       <GridImage {...light} />

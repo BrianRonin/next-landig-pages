@@ -1,11 +1,14 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 
-const Light = (theme) => css`
+const Light = (theme: DefaultTheme) => css`
   color: ${theme.colors.primaryColor};
   background: ${theme.colors.white};
 `
+type background = {
+  background: boolean
+}
 
-export const Main = styled.a`
+export const Main = styled.a<background>`
   ${({ theme, background }) => css`
     position: fixed;
     background: ${theme.colors.primaryColor};

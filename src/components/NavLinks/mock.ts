@@ -1,7 +1,7 @@
-import { MenuLinkProps } from './../MenuLink/index'
+import { menuLinkProps } from './../MenuLink/index'
 import { navLinksProps } from '.'
 
-export const MockNavLinks: MenuLinkProps[] = [
+export const MockNavLinks = [
   {
     children: 'link 1',
     link: '#target1',
@@ -52,4 +52,4 @@ export const MockNavLinks: MenuLinkProps[] = [
     link: '#target10',
     newTab: false,
   },
-]
+] as menuLinkProps[]

@@ -5,7 +5,7 @@ import { SectionBackground } from './index'
 describe('<SectionBackground />', () => {
   it('should render with background dark', () => {
     const { container } = renderTheme(
-      <SectionBackground background={true}>
+      <SectionBackground sectionId='1' background={true}>
         <h1>teste</h1>
       </SectionBackground>,
     )
@@ -14,7 +14,7 @@ describe('<SectionBackground />', () => {
   })
   it('should render with background white', () => {
     const { container } = renderTheme(
-      <SectionBackground background={false}>
+      <SectionBackground sectionId='1' background={false}>
         <h1>teste</h1>
       </SectionBackground>,
     )

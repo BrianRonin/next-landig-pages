@@ -5,7 +5,7 @@ import { JsxElement } from 'typescript'
 import { Style } from 'util'
 
 export type logoLinkProps = {
-  text?: string
+  text: string
   srcImg?: string
   link: string
 }

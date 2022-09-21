@@ -1,3 +1,4 @@
+import { baseProps } from '.'
 import { GridText } from '../../components/GridText'
 import { MockGridText } from '../../components/GridText/mock'
 import { GridTwoColumn } from '../../components/GridTwoColumn'
@@ -13,11 +14,11 @@ export const MockBase = {
   footerHtml: '<p>footer</p>',
   children: (
     <>
-      <GridTwoColumn {...mock_GridTwoColumn} />
+      <GridTwoColumn id='' {...mock_GridTwoColumn} />
       <GridText {...MockGridText} />
       <GridText {...MockGridText} background />
       <GridText {...MockGridText} />
       <GridText {...MockGridText} background />
     </>
   ),
-}
+} as baseProps

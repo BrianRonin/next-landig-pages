@@ -4,7 +4,19 @@ import { SectionBackground } from '../SectionBackground'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
 
-export const GridContent = ({ title, html, background, id = '' }) => {
+export type gridContentProps = {
+  title: string
+  html: string
+  background?: boolean
+  id?: string
+}
+
+export const GridContent = ({
+  title,
+  html,
+  background,
+  id = '',
+}: gridContentProps) => {
   return (
     <S.Main>
       <SectionBackground background={background} sectionId={id}>
@@ -12,17 +24,9 @@ export const GridContent = ({ title, html, background, id = '' }) => {
           {title}
         </Heading>
         <S.Container_Html>
-          <Text isHtml={true}>{html}</Text>
+          <Text>{html}</Text>
         </S.Container_Html>
       </SectionBackground>
     </S.Main>
   )
-}
-
-GridContent.propTypes = {
-  title: P.string.isRequired,
-  html: P.string.isRequired,
-  srcImg: P.string.isRequired,
-  background: P.bool,
-  id: P.string,
 }

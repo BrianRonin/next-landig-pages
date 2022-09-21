@@ -30,3 +30,22 @@ export const MockGridImage = {
     },
   ],
 }
+export const MockGridImageNoAlt = {
+  background: false,
+  title: 'My grid',
+  description:
+    'Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde',
+  grid: [
+    'https://source.unsplash.com/random/800x800?r=1',
+
+    'https://source.unsplash.com/random/800x800?r=2',
+
+    'https://source.unsplash.com/random/800x800?r=3',
+
+    'https://source.unsplash.com/random/800x800?r=4',
+
+    'https://source.unsplash.com/random/800x800?r=5',
+
+    'https://source.unsplash.com/random/800x800?r=6',
+  ],
+}

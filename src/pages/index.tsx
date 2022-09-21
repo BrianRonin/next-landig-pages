@@ -1,16 +1,12 @@
 import { GetStaticProps } from 'next'
 import { loadPages } from '../api/load-pages'
-import { Home } from '../templates/Home'
+import { Home, homeProps } from '../templates/Home'
 
-export type IndexProps = {
-  data: []
-}
-
-export default function Index({ data }: IndexProps) {
+export default function Index({ data }: homeProps) {
   return <Home data={data} />
 }
 
-export const getStaticProps: GetStaticProps<IndexProps> = async () => {
+export const getStaticProps: GetStaticProps<homeProps> = async () => {
   let data = null
   try {
     data = await loadPages()

@@ -7,11 +7,7 @@ export type menuLinkProps = {
   newTab?: boolean
 }
 
-export const MenuLink = ({
-  children,
-  link: link,
-  newTab = false,
-}: menuLinkProps) => {
+export const MenuLink = ({ children, link, newTab = false }: menuLinkProps) => {
   const target = newTab ? '_blank' : '_self'
   const isNextLink = link.match(/^\//) ? true : false
   if (isNextLink) {

@@ -1,4 +1,5 @@
-import { Base } from './index'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { Base, baseProps } from './index'
 import { MockBase } from './mock'
 
 export default {
@@ -11,9 +12,9 @@ export default {
       default: 'light',
     },
   },
-}
+} as Meta
 
-export const Template = (light) => {
+export const Template: Story<baseProps> = (light) => {
   return (
     <div>
       <Base {...light} />

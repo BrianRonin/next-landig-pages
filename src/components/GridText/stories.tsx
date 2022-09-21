@@ -1,4 +1,5 @@
-import { GridText } from './index'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { GridText, gridTextProps } from './index'
 import { MockGridText } from './mock'
 
 export default {
@@ -11,9 +12,9 @@ export default {
       default: 'light',
     },
   },
-}
+} as Meta
 
-export const Template = (light) => {
+export const Template: Story<gridTextProps> = (light) => {
   return (
     <div>
       <GridText {...light} />

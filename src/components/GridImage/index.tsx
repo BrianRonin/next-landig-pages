@@ -1,8 +1,15 @@
 import * as S from './styles'
-import P from 'prop-types'
 import { SectionBackground } from '../SectionBackground'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
+
+export type gridImageProps = {
+  background?: boolean
+  description: string
+  title: string
+  grid: Array<string>
+  id?: string
+}
 
 export const GridImage = ({
   background,
@@ -10,7 +17,7 @@ export const GridImage = ({
   title,
   grid,
   id = '',
-}) => {
+}: gridImageProps) => {
   return (
     <SectionBackground background={background} sectionId={id}>
       <S.Main>
@@ -28,17 +35,4 @@ export const GridImage = ({
       </S.Main>
     </SectionBackground>
   )
-}
-
-GridImage.propTypes = {
-  background: P.oneOf([P.bool, undefined]),
-  description: P.oneOf[(P.string, undefined)],
-  title: P.string.isRequired,
-  grid: P.arrayOf(
-    P.shape({
-      altText: P.string.isRequired,
-      srcImg: P.string.isRequired,
-    }),
-  ).isRequired,
-  id: P.string,
 }

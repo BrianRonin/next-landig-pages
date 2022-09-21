@@ -1,8 +1,8 @@
-import { MenuLink, MenuLinkProps } from '../MenuLink'
+import { MenuLink, menuLinkProps } from '../MenuLink'
 import * as S from './styles'
 
 export type navLinksProps = {
-  links?: MenuLinkProps[]
+  links: menuLinkProps[]
 }
 
 export const NavLinks = ({ links = [] }: navLinksProps) => {
