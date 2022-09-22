@@ -4,8 +4,8 @@ export const Main = styled.a`
   color: inherit;
   display: flex;
   align-items: center;
+`
 
-  > img {
-    max-height: 6rem;
-  }
+export const Svg = styled.img`
+  max-height: 6rem;
 `

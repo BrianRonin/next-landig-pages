@@ -14,7 +14,7 @@ describe('map-image', () => {
   })
   it('should return values in array', () => {
     const img = mapImage(
-      mockApi.data[1].attributes.sections[2].image_grid.image,
+      mockApi.data[1].attributes.sections[2].image_grid?.image,
     )
     expect(img).toEqual([
       'https://res.cloudinary.com/brianronin/image/upload/v1662772483/800x800_78230a377d.jpg',

@@ -6,7 +6,7 @@ export default function Page({ data }: homeProps) {
   return <Home data={data} />
 }
 
-export const getStaticProps: GetStaticProps<homeProps> = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   let data = null
   try {
     data = await loadPages(ctx?.params?.pagina as string)
@@ -22,9 +22,9 @@ export const getStaticProps: GetStaticProps<homeProps> = async (ctx) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = (await loadPages('all')).map((page: homeProps) => {
+  const paths = ((await loadPages('all')) as homeProps[]).map((page: any) => {
     return {
-      params: { pagina: page.data.slug },
+      params: { pagina: page.slug },
     }
   })
   const x = {

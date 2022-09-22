@@ -1,11 +1,11 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { GridImage, gridImageProps } from './index'
-import { MockGridImage } from './mock'
+import { MockGridImageNoAlt } from './mock'
 
 export default {
   title: 'GridImage',
   component: GridImage,
-  args: MockGridImage,
+  args: MockGridImageNoAlt,
   argTypes: {},
   parameters: {
     backgrounds: {

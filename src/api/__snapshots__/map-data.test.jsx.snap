@@ -8,18 +8,18 @@ exports[`map-data should return correct values 1`] = `
       "link": "#index",
       "links": [
         {
-          "Link": "#why-us",
           "children": "why us",
+          "link": "#why-us",
           "newTab": false,
         },
         {
-          "Link": "#grid-one",
           "children": "grid one",
+          "link": "#grid-one",
           "newTab": false,
         },
         {
-          "Link": "#index",
           "children": "intro",
+          "link": "#index",
           "newTab": false,
         },
       ],
@@ -80,18 +80,18 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
       "link": "#index",
       "links": [
         {
-          "Link": "#why-us",
           "children": "why us",
+          "link": "#why-us",
           "newTab": false,
         },
         {
-          "Link": "#grid-one",
           "children": "grid one",
+          "link": "#grid-one",
           "newTab": false,
         },
         {
-          "Link": "#index",
           "children": "intro",
+          "link": "#index",
           "newTab": false,
         },
       ],

@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { Footer, FooterProps } from './index'
+import { Footer, footerProps } from './index'
 
 export default {
   title: 'Footer',
@@ -15,9 +15,9 @@ export default {
       default: 'light',
     },
   },
-}
+} as Meta
 
-export const Template: Story<FooterProps> = (args) => {
+export const Template: Story<footerProps> = (args) => {
   return (
     <div>
       <Footer {...args} />

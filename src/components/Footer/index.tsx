@@ -9,7 +9,7 @@ export type footerProps = {
   background?: boolean
 }
 
-export const Footer = ({ children, background = false }: FooterProps) => {
+export const Footer = ({ children, background = false }: footerProps) => {
   return (
     <S.Main>
       <SectionContainer>

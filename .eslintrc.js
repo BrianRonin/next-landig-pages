@@ -43,6 +43,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 0,
+    '@typescript-eslint/no-explicit-any': 0,
   },
   globals: {
     React: true,

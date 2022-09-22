@@ -15,10 +15,6 @@ exports[`<LogoLink /> should match snapshot 1`] = `
   align-items: center;
 }
 
-.c1 > img {
-  max-height: 6rem;
-}
-
 .c0 {
   color: #0A1128;
   text-transform: uppercase;
@@ -33,10 +29,7 @@ exports[`<LogoLink /> should match snapshot 1`] = `
       class="c1"
       href="#"
     >
-      <img
-        alt="logo"
-        src="imagem"
-      />
+      logo
     </a>
   </h1>
 </div>

@@ -1,6 +1,6 @@
 import { mapSectionsMetadata } from '../../metadata/map-sections-metadata'
 
-export const mapSectionGridText = (gridText = []) => {
+export const mapSectionGridText = (gridText: any = []): typeof returnValue => {
   const {
     title = '',
     description = '',
@@ -8,18 +8,28 @@ export const mapSectionGridText = (gridText = []) => {
     metadata = {},
   } = gridText
 
-  const x = {
+  const returnValue = {
     component: grid.length > 0 ? 'section.section-grid-text' : '',
     title,
     description,
     grid: mapGrid(grid),
     ...mapSectionsMetadata(metadata),
+  } as {
+    name: string
+    id: string
+    background: boolean
+    component: string
+    title: string
+    description: string
+    grid: ReturnType<typeof mapGrid>
   }
-  console.log(x)
-  return x
+
+  return returnValue
 }
 
-const mapGrid = (grid) => {
+const mapGrid = (
+  grid: [],
+): Array<{ title: string; description: string }> | [] => {
   return grid.map((content) => {
     const { title, description } = content
     return { title, description }

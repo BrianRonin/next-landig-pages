@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const container = styled.div`
-  ${({ background, theme }) => {
+  ${({ theme }) => {
     return css`
       background: ${theme.colors.secondaryBg};
     `

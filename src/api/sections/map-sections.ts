@@ -1,9 +1,10 @@
+import { sectionType } from '../../templates/Home'
 import { mapSectionContent } from './content/map-sections-content'
 import { mapSectionGrid } from './grid/map-sections-grid'
 import { mapSectionTwoColumns } from './two-columns/map-two-columns'
 
-export const mapSections = (sections = []) => {
-  return sections.map((section) => {
+export const mapSections = (sections: any[] = []): sectionType[] => {
+  return sections.map((section: any) => {
     switch (section.__component) {
       case 'section.section-two-columns':
         return mapSectionTwoColumns(section)

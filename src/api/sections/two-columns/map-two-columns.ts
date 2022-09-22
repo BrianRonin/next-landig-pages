@@ -1,7 +1,7 @@
 import { mapImage } from '../../image/map-image'
 import { mapSectionsMetadata } from '../metadata/map-sections-metadata'
 
-export const mapSectionTwoColumns = (section = {}) => {
+export const mapSectionTwoColumns = (section: any = {}) => {
   const {
     __component: component = '',
     title = '',
@@ -9,11 +9,19 @@ export const mapSectionTwoColumns = (section = {}) => {
     image: srcImg = {},
     metadata = {},
   } = section
-  return {
+
+  const returnValue = {
     component,
     title,
     text,
     srcImg: mapImage(srcImg),
     ...mapSectionsMetadata(metadata),
-  }
+  } as {
+    component: string
+    title: string
+    text: string
+    srcImg: ReturnType<typeof mapImage>
+  } & ReturnType<typeof mapSectionsMetadata>
+
+  return returnValue
 }

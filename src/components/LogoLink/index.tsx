@@ -17,7 +17,7 @@ export const LogoLink = ({ text, srcImg = '', link = '' }: logoLinkProps) => {
       <Heading size='small' uppercase>
         <Link href={link} passHref>
           <S.Main>
-            {!!srcImg && <img src={srcImg} alt={text} />}
+            {!!srcImg && <S.Svg src={srcImg} alt={text} />}
             {!srcImg && text}
           </S.Main>
         </Link>
@@ -28,8 +28,8 @@ export const LogoLink = ({ text, srcImg = '', link = '' }: logoLinkProps) => {
   return (
     <Heading size='small' uppercase>
       <S.Main href={link}>
-        {!!srcImg && <img src={srcImg} alt={text} />}
-        {!srcImg && text}
+        {/* {!!srcImg && <img src={srcImg} alt={text} />} */}
+        {!!srcImg && text}
       </S.Main>
     </Heading>
   )

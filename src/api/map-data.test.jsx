@@ -1,6 +1,5 @@
 import { mapData } from './map-data'
 import { mockApi } from './mockApi2'
-const util = require('util')
 describe('map-data', () => {
   it('should return correct values', () => {
     const map = mapData(mockApi)

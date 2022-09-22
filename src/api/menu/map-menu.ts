@@ -1,7 +1,7 @@
 import { mapImage } from '../image/map-image'
 import { mapMenuLinks } from './links/map-menu-links'
 
-export const mapMenu = (Menu = {}) => {
+export const mapMenu = (Menu: any = {}): typeof returnValue => {
   const {
     logo_link: link = '',
     logo_text: text = '',
@@ -9,10 +9,17 @@ export const mapMenu = (Menu = {}) => {
     menu_links: links = [],
   } = Menu
 
-  return {
+  const returnValue = {
     link,
     text,
     srcImg: mapImage(image),
     links: mapMenuLinks(links),
+  } as {
+    link: string
+    text: string
+    srcImg: string
+    links: ReturnType<typeof mapMenuLinks>
   }
+
+  return returnValue
 }

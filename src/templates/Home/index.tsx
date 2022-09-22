@@ -11,20 +11,20 @@ import { Heading } from '../../components/Heading'
 import { menuLinkProps } from '../../components/MenuLink'
 import { logoLinkProps } from '../../components/LogoLink'
 
-type metadata = {
+export type metadataType = {
   component: string
   name: string
   id: string
   background: boolean
 }
 
-type sections = (
+export type sectionType = (
   | gridImageProps
   | gridTwoColumnProps
   | gridContentProps
   | gridTextProps
 ) &
-  metadata
+  metadataType
 
 export type homeProps = {
   data: {
@@ -32,7 +32,7 @@ export type homeProps = {
     slug: string
     title: string
     menu: logoLinkProps & { links: menuLinkProps[] }
-    sections: sections[]
+    sections: sectionType[]
   }
 }
 
@@ -40,10 +40,9 @@ export const Home = ({ data }: homeProps) => {
   if (data === null) {
     return <PageNotFound />
   }
-
   const { menu, sections, footerHtml: footer } = data
   const { links, text, link, srcImg } = menu
-
+  console.log(data)
   return (
     <Base
       links={links}

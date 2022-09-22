@@ -57,10 +57,6 @@ exports[`<Base /> should render 1`] = `
   align-items: center;
 }
 
-.c8 > img {
-  max-height: 6rem;
-}
-
 .c2 {
   position: fixed;
   z-index: 5;
@@ -182,36 +178,6 @@ exports[`<Base /> should render 1`] = `
   padding-bottom: 0;
 }
 
-.c12 {
-  background: #FFFFFF;
-  color: #0A1128;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c22 {
-  background: #FFFFFF;
-  color: #0A1128;
-  color: #FFFFFF;
-  background: #0A1128;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c26 {
   position: fixed;
   background: #0A1128;
@@ -265,6 +231,36 @@ exports[`<Base /> should render 1`] = `
   -webkit-transform: rotate(10deg);
   -ms-transform: rotate(10deg);
   transform: rotate(10deg);
+}
+
+.c12 {
+  background: #FFFFFF;
+  color: #0A1128;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c22 {
+  background: #FFFFFF;
+  color: #0A1128;
+  color: #FFFFFF;
+  background: #0A1128;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c13 {
@@ -434,9 +430,7 @@ exports[`<Base /> should render 1`] = `
           <a
             class="c8"
             href="#"
-          >
-            Logo
-          </a>
+          />
         </h1>
         <nav
           aria-label="Main menu"
@@ -447,70 +441,70 @@ exports[`<Base /> should render 1`] = `
             href="#target1"
             target="_self"
           >
-            Link 1
+            link 1
           </a>
           <a
             class="c10"
             href="#target2"
             target="_self"
           >
-            Link 2
+            link 2
           </a>
           <a
             class="c10"
             href="#target3"
             target="_self"
           >
-            Link 3
+            link 3
           </a>
           <a
             class="c10"
             href="#target4"
             target="_self"
           >
-            Link 4
+            link 4
           </a>
           <a
             class="c10"
             href="#target5"
             target="_self"
           >
-            Link 5
+            link 5
           </a>
           <a
             class="c10"
             href="#target6"
             target="_self"
           >
-            Link 6
+            link 6
           </a>
           <a
             class="c10"
             href="#target7"
             target="_self"
           >
-            Link 7
+            link 7
           </a>
           <a
             class="c10"
             href="#target8"
             target="_self"
           >
-            Link 8
+            link 8
           </a>
           <a
             class="c10"
             href="#target9"
             target="_self"
           >
-            Link 9
+            link 9
           </a>
           <a
             class="c10"
             href="#target10"
             target="_self"
           >
-            Link 10
+            link 10
           </a>
         </nav>
       </div>
