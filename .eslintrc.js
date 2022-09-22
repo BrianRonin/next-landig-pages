@@ -44,6 +44,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 0,
     '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-unused-vars': 0,
+    'import/no-anonymous-default-export': 0,
   },
   globals: {
     React: true,

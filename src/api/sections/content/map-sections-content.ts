@@ -1,6 +1,6 @@
 import { mapSectionsMetadata } from '../metadata/map-sections-metadata'
 
-export const mapSectionContent = (section = {}) => {
+export const mapSectionContent = (section: any = {}) => {
   const {
     title = '',
     content: html = '',

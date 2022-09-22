@@ -1,15 +1,14 @@
-import { logoLinkProps } from './../LogoLink/index'
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import { Title } from '../Heading/styles'
+import { Main as LogoLink } from '../LogoLink/styles'
 import { Main as Container } from '../SectionContainer/styles'
-import { LogoLink } from '../LogoLink'
 
 type menuVisible = {
   visible?: boolean
-  LogoLink?: logoLinkProps
+  LogoLink?: React.ReactNode
 }
 
-const isMenuVisible = (theme) => css`
+const isMenuVisible = (theme: DefaultTheme) => css`
   visibility: visible;
   opacity: 1;
 `
