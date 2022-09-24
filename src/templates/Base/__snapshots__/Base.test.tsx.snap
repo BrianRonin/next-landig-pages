@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Base /> should render 1`] = `
-.c11 {
+.c12 {
   padding-top: 5.4rem;
 }
 
@@ -11,39 +11,31 @@ exports[`<Base /> should render 1`] = `
   font-size: 2.4rem;
 }
 
-.c15 {
+.c16 {
   color: #0A1128;
   text-transform: uppercase;
   font-size: 6.4rem;
 }
 
-.c21 {
+.c22 {
   color: #0A1128;
   text-transform: none;
   font-size: 3.2rem;
-}
-
-.c23 {
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-size: 6.4rem;
 }
 
 .c24 {
   color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 6.4rem;
+}
+
+.c25 {
+  color: #FFFFFF;
   text-transform: none;
   font-size: 3.2rem;
 }
 
-.c4 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-  width: 100%;
-  position: relative;
-}
-
-.c8 {
+.c9 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
@@ -55,6 +47,14 @@ exports[`<Base /> should render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c4 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 100%;
+  position: relative;
 }
 
 .c2 {
@@ -70,7 +70,7 @@ exports[`<Base /> should render 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c2 [object Object] {
+.c2 .c8 {
   margin: 0;
 }
 
@@ -108,7 +108,7 @@ exports[`<Base /> should render 1`] = `
   pointer-events: all;
 }
 
-.c10 {
+.c11 {
   display: block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -118,7 +118,7 @@ exports[`<Base /> should render 1`] = `
   position: relative;
 }
 
-.c10::after {
+.c11::after {
   content: '';
   position: absolute;
   bottom: 15%;
@@ -130,12 +130,12 @@ exports[`<Base /> should render 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c10:hover::after {
+.c11:hover::after {
   left: 25%;
   width: 50%;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,34 +151,34 @@ exports[`<Base /> should render 1`] = `
   overflow: hidden;
 }
 
-.c17 {
+.c18 {
   font-size: 2.4rem;
 }
 
-.c25 {
+.c26 {
   text-align: center;
   font-size: 1.6rem;
   border-top: 0.1rem solid #DDDDDD;
   background-color: white;
 }
 
-.c25 a {
+.c26 a {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 1.6rem;
 }
 
-.c25 .c16 {
+.c26 .c17 {
   font-size: 1.6rem;
 }
 
-.c25 .c3 {
+.c26 .c3 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.c26 {
+.c27 {
   position: fixed;
   background: #0A1128;
   color: #FFFFFF;
@@ -203,7 +203,7 @@ exports[`<Base /> should render 1`] = `
   border-radius: 50%;
 }
 
-.c19 {
+.c20 {
   counter-reset: grid-counter;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
@@ -212,16 +212,16 @@ exports[`<Base /> should render 1`] = `
   overflow: hidden;
 }
 
-.c19 .c16 {
+.c20 .c17 {
   margin-bottom: 6.4rem;
 }
 
-.c20 .c6 {
+.c21 .c6 {
   position: relative;
   left: 5rem;
 }
 
-.c20 .c6::before {
+.c21 .c6::before {
   counter-increment: grid-counter;
   content: counter(grid-counter);
   position: absolute;
@@ -233,7 +233,7 @@ exports[`<Base /> should render 1`] = `
   transform: rotate(10deg);
 }
 
-.c12 {
+.c13 {
   background: #FFFFFF;
   color: #0A1128;
   min-height: 100vh;
@@ -247,7 +247,7 @@ exports[`<Base /> should render 1`] = `
   align-items: center;
 }
 
-.c22 {
+.c23 {
   background: #FFFFFF;
   color: #0A1128;
   color: #FFFFFF;
@@ -263,7 +263,7 @@ exports[`<Base /> should render 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   -webkit-align-items: center;
@@ -273,28 +273,28 @@ exports[`<Base /> should render 1`] = `
   gap: 3.2rem;
 }
 
-.c13 .c6 {
+.c14 .c6 {
   margin-bottom: 4.0rem;
 }
 
-.c18 {
+.c19 {
   width: 100%;
 }
 
 @media (max-width:768px) {
-  .c11 {
+  .c12 {
     padding-top: 0;
   }
 }
 
 @media (max-width:768px) {
-  .c15 {
+  .c16 {
     font-size: 4.0rem;
   }
 }
 
 @media (max-width:768px) {
-  .c23 {
+  .c24 {
     font-size: 4.0rem;
   }
 }
@@ -363,7 +363,7 @@ exports[`<Base /> should render 1`] = `
 }
 
 @media (max-width:768px) {
-  .c9 {
+  .c10 {
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
@@ -375,19 +375,19 @@ exports[`<Base /> should render 1`] = `
 }
 
 @media (max-width:768px) {
-  .c19 {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width:768px) {
-  .c13 {
+  .c20 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width:768px) {
   .c14 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px) {
+  .c15 {
     margin-bottom: 3.2rem;
   }
 }
@@ -428,79 +428,79 @@ exports[`<Base /> should render 1`] = `
           class="c6 c7"
         >
           <a
-            class="c8"
+            class="c8 c9"
             href="#"
           />
         </h1>
         <nav
           aria-label="Main menu"
-          class="c9"
+          class="c10"
         >
           <a
-            class="c10"
+            class="c11"
             href="#target1"
             target="_self"
           >
             link 1
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target2"
             target="_self"
           >
             link 2
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target3"
             target="_self"
           >
             link 3
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target4"
             target="_self"
           >
             link 4
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target5"
             target="_self"
           >
             link 5
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target6"
             target="_self"
           >
             link 6
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target7"
             target="_self"
           >
             link 7
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target8"
             target="_self"
           >
             link 8
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target9"
             target="_self"
           >
             link 9
           </a>
           <a
-            class="c10"
+            class="c11"
             href="#target10"
             target="_self"
           >
@@ -511,28 +511,28 @@ exports[`<Base /> should render 1`] = `
     </section>
   </div>
   <div
-    class="c11"
+    class="c12"
   >
     <div
-      class="c12"
+      class="c13"
       id=""
     >
       <section
         class="c3 c4"
       >
         <div
-          class="c13"
+          class="c14"
         >
           <div
-            class="c14"
+            class="c15"
           >
             <h2
-              class="c6 c15"
+              class="c6 c16"
             >
               titulo
             </h2>
             <div
-              class="c16 c17"
+              class="c17 c18"
             >
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat temporibus dicta facilis fugiat corporis adipisci molestias beatae voluptate iure voluptates iste qui possimus accusamus, laudantium aspernatur animi aliquam. Minima.
             </div>
@@ -542,7 +542,7 @@ exports[`<Base /> should render 1`] = `
           >
             <img
               alt="titulo"
-              class="c18"
+              class="c19"
               src="assets/images/analytics_re_wxt8.svg"
             />
           </div>
@@ -553,63 +553,63 @@ exports[`<Base /> should render 1`] = `
       class=""
     >
       <div
-        class="c12"
+        class="c13"
         id=""
       >
         <section
           class="c3 c4"
         >
           <h2
-            class="c6 c15"
+            class="c6 c16"
           >
             My grid
           </h2>
           <div
-            class="c16 c17"
+            class="c17 c18"
           >
             Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
           </div>
           <div
-            class="c19"
+            class="c20"
           >
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c21"
+                class="c6 c22"
               >
                 Teste 1
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c21"
+                class="c6 c22"
               >
                 Teste 2
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c21"
+                class="c6 c22"
               >
                 Teste 3
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
@@ -622,63 +622,63 @@ exports[`<Base /> should render 1`] = `
       class=""
     >
       <div
-        class="c22"
+        class="c23"
         id=""
       >
         <section
           class="c3 c4"
         >
           <h2
-            class="c6 c23"
+            class="c6 c24"
           >
             My grid
           </h2>
           <div
-            class="c16 c17"
+            class="c17 c18"
           >
             Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
           </div>
           <div
-            class="c19"
+            class="c20"
           >
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c24"
+                class="c6 c25"
               >
                 Teste 1
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c24"
+                class="c6 c25"
               >
                 Teste 2
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c24"
+                class="c6 c25"
               >
                 Teste 3
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
@@ -691,63 +691,63 @@ exports[`<Base /> should render 1`] = `
       class=""
     >
       <div
-        class="c12"
+        class="c13"
         id=""
       >
         <section
           class="c3 c4"
         >
           <h2
-            class="c6 c15"
+            class="c6 c16"
           >
             My grid
           </h2>
           <div
-            class="c16 c17"
+            class="c17 c18"
           >
             Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
           </div>
           <div
-            class="c19"
+            class="c20"
           >
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c21"
+                class="c6 c22"
               >
                 Teste 1
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c21"
+                class="c6 c22"
               >
                 Teste 2
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c21"
+                class="c6 c22"
               >
                 Teste 3
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
@@ -760,63 +760,63 @@ exports[`<Base /> should render 1`] = `
       class=""
     >
       <div
-        class="c22"
+        class="c23"
         id=""
       >
         <section
           class="c3 c4"
         >
           <h2
-            class="c6 c23"
+            class="c6 c24"
           >
             My grid
           </h2>
           <div
-            class="c16 c17"
+            class="c17 c18"
           >
             Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
           </div>
           <div
-            class="c19"
+            class="c20"
           >
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c24"
+                class="c6 c25"
               >
                 Teste 1
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c24"
+                class="c6 c25"
               >
                 Teste 2
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
             </div>
             <div
-              class="c20"
+              class="c21"
             >
               <h3
-                class="c6 c24"
+                class="c6 c25"
               >
                 Teste 3
               </h3>
               <div
-                class="c16 c17"
+                class="c17 c18"
               >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.
               </div>
@@ -826,13 +826,13 @@ exports[`<Base /> should render 1`] = `
       </div>
     </div>
     <div
-      class="c25"
+      class="c26"
     >
       <section
         class="c3 c4"
       >
         <div
-          class="c16 c17"
+          class="c17 c18"
         >
           <p>
             footer
@@ -842,7 +842,7 @@ exports[`<Base /> should render 1`] = `
     </div>
   </div>
   <a
-    class="c26"
+    class="c27"
     href="#"
     target="_self"
     title="Go to top"

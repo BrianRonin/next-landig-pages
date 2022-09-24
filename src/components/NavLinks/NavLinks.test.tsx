@@ -9,10 +9,6 @@ describe('<NavLinks />', () => {
     renderTheme(<NavLinks links={MockNavLinks} />)
     expect(screen.getAllByRole('link')).toHaveLength(MockNavLinks.length)
   })
-  it('should not render links', () => {
-    renderTheme(<NavLinks />)
-    expect(screen.queryAllByText(/links/i)).toHaveLength(0)
-  })
   it('should match snapshot', () => {
     const { container } = renderTheme(<NavLinks links={MockNavLinks} />)
     expect(container).toMatchSnapshot()
